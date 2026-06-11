@@ -331,8 +331,8 @@ function playVideo(id) {
 
   // reset fallback
   document.getElementById('iframeFallback').classList.remove('show');
-  document.getElementById('playerFrame').src = embedUrl;
-
+  document.getElementById('playerFrconst wrap = document.getElementById('iframeWrap');
+wrap.innerHTML = `<iframe src="${embedUrl}" allowfullscreen allow="autoplay; encrypted-media" style="position:absolute;inset:0;width:100%;height:100%;border:none;"></iframe>`;ame').src = embedUrl;
   document.getElementById('playerModal').classList.add('open');
 
   // detect embed block after short delay
